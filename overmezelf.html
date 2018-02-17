@@ -16,19 +16,27 @@
     <title>Home</title>
 </head>
 <body>
-<div class="container green borderXwidth">
-    <a href="index.html">home</a>
+<div class="container green borderXwidth" id="myContainer">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="index.html" >home</a>
     <a href="overmezelf.html" class="active">over mezelf</a>
     <a href="">competenties</a>
     <a href="cv.html">cv</a>
     <a href="contact.html">contact</a>
 </div>
-<!--<div w3-include-html="header.html"></div>-->
-<!--<script>-->
-<!--w3.includeHTML();-->
-<!--</script>-->
 
-<section class="overSection">
+<script>
+    function myFunction() {
+        var x = document.getElementById("myContainer");
+        if (x.className === "container green borderXwidth") {
+            x.className += " responsive green borderXwidth";
+        } else {
+            x.className = "container green borderXwidth";
+        }
+    }
+</script>
+
+<section class="section overSection">
 
     <div class="grid-container">
         <div class="hovereffect grid-item">
@@ -48,7 +56,7 @@
         </article>
         <article class="grid-item">
             <img src="img/monitor.png" alt="">
-            <h4>Techneut</h4>
+            <h4></h4>
         </article>
         <article class="grid-item">
             <img src="img/guitar.png" alt="">

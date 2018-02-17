@@ -9,19 +9,27 @@
     <title>over mezelf</title>
 </head>
 <body>
-<div class="container green borderXwidth">
-    <a href="index.html">home</a>
+<div class="container green borderXwidth" id="myContainer">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="index.html" >home</a>
     <a href="overmezelf.html">over mezelf</a>
     <a href="">competenties</a>
     <a href="cv.html" class="active">cv</a>
     <a href="contact.html">contact</a>
 </div>
-<!--<div w3-include-html="header.html"></div>-->
-<!--<script>-->
-<!--w3.includeHTML();-->
-<!--</script>-->
 
-<section class="cvSection">
+<script>
+    function myFunction() {
+        var x = document.getElementById("myContainer");
+        if (x.className === "container green borderXwidth") {
+            x.className += " responsive green borderXwidth";
+        } else {
+            x.className = "container green borderXwidth";
+        }
+    }
+</script>
+
+<section class="section cvSection">
     <h3>Hier kan je mijn cv bekijken.</h3>
     <a href="" download id="download" class="hvr-underline-from-left">Download cv</a>
 </section>
