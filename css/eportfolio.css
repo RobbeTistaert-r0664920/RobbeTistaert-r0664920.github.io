@@ -13,8 +13,79 @@ body {
     color: #3C3C3C;
 }
 
+a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
 .header{
     margin-left: 6%;
+    padding: 1em;
+}
+
+header.h{
+    background-color: #1e2019;
+    color: #f6f6f6;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+}
+
+.nav{
+    margin-left: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav ul{
+    padding: 0;
+    display: flex;
+    vertical-align: middle;
+}
+
+.nav ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+
+}
+
+.nav ul li a {
+    width:110px;
+    height: 110px;
+    border: 5px solid #F34213;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    color: #f6f6f6;
+    /*padding: 0.5em;*/
+    line-height: 110px;
+    text-align: center;
+
+}
+
+.nav ul li a:hover{
+    background-color: white;
+    color: #F34213;
+    font-weight: bolder;
+    border: 5px solid white;
+    transition: ease-in-out 400ms;
+}
+
+
+/*.nav ul li a:before{*/
+    /*z-index: auto;*/
+    /*!*left: -50px;*!*/
+    /*position: relative;*/
+    /*color: #f6f6f6;*/
+
+/*}*/
+
+h2.paginaTitel{
+    /*font-family: 'Permanent Marker', sans-serif;*/
+    font-family: 'Walter Turncoat', cursive;
+    margin-left: 21%;
+    margin-top: 1.5em;
 }
 
 p{
@@ -26,14 +97,14 @@ p{
     background: #1e2019;
 }
 
-header h1
-{
-    color: #f5f1e3;
-    font-size: 40px;
-    margin-left: 20%;
-    /*font-weight: lighter;*/
-    /*margin-bottom: 5px;*/
-}
+/*header h1*/
+/*{*/
+    /*color: #f5f1e3;*/
+    /*font-size: 40px;*/
+    /*margin-left: 20%;*/
+    /*!*font-weight: lighter;*!*/
+    /*!*margin-bottom: 5px;*!*/
+/*}*/
 
 header span
 {
@@ -101,31 +172,16 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
 /*QLKSDFJQSLFKQSLKDJFLSKQDJKLQFSDJFKLQSJKLFJQSDLKFJQSLKJFKLQSDJFKLQSJKLFJQSKLJFKLQSDJFKLSJLKFJSQKLFJSDKLDJLKQSDJFLK*/
 
 .section{
+    margin-top: 0;
     margin-bottom: 4em !important;
 }
 
 .homeSection {
-    width: 90%;
+    padding: 1em;
     margin: 7.5em auto 0 auto;
+    /*background-color: #1e2019;*/
 }
 
-/*.homeSection{*/
-    /*margin-top: 3em;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-
-    /*display: flex;*/
-    /*width: 60%;*/
-    /*align-items: center;*/
-    /*!*border-top: 1.5px solid #C4C4C2;*!*/
-    /*!*border-bottom: 2px solid #C4C4C2;*!*/
-/*}*/
-
-/*.homeSection article{*/
-    /*margin-left: -3em;*/
-    /*!*background-color: red;*!*/
-    /*width: 60%;*/
-/*}*/
 
 hr{
     margin: 0;
@@ -207,34 +263,12 @@ span.text-content {
     transition: opacity 500ms;
 }
 
-/*.grid-container {*/
-    /*display: grid;*/
-    /*grid-template-columns: auto auto ;*/
-    /*grid-column-gap: 0px;*/
-    /*grid-row-gap: 5px;*/
-    /*!*grid-auto-flow: row;*!*/
-    /*background: none;*/
-    /*!*width: 20%;*!*/
-    /*margin-right: 10%;*/
-/*}*/
-
-
-/*.grid-item {*/
-    /*box-sizing: border-box;*/
-    /*background: yellow;*/
-    /*padding: 15px;*/
-    /*text-align: center;*/
-    /*height: 90%;*/
-    /*width: 100%;*/
-    /*!*align-items: center;*!*/
-/*}*/
-
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -248,29 +282,18 @@ span.text-content {
     width: 50%;
 }
 
-
-/*.grid-item img{*/
-    /*!*margin-left: auto;*!*/
-    /*!*margin-right: auto;*!*/
-/*}*/
-
-/*.grid-item h4{*/
-    /*margin-top: 0.5em;*/
-    /*margin-bottom: 0;*/
-/*}*/
-
 .overSection{
-    margin-top: 3em;
+    /*margin-top: 0.5em;*/
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 50%;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    border-top: 1.5px solid #C4C4C2;
-    border-bottom: 2px solid #C4C4C2;
+    width: 60%;
+    /*border-top: 1.5px solid #C4C4C2;*/
+    /*border-bottom: 2px solid #C4C4C2;*/
 }
-
+.overSection p{
+    text-align: justify-all;
+}
 
 
 .cvSection{
@@ -281,8 +304,8 @@ span.text-content {
     flex-direction: column;
     width: 50%;
     align-items: center;
-    border-top: 1.5px solid #C4C4C2;
-    border-bottom: 2px solid #C4C4C2;
+    /*border-top: 1.5px solid #C4C4C2;*/
+    /*border-bottom: 2px solid #C4C4C2;*/
 }
 
 .cvSection h3{
@@ -320,10 +343,6 @@ span.text-content {
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
 }
-
-
-
-
 
 
 /*FOOTER*/
@@ -408,6 +427,8 @@ footer{
 }
 
 .hovereffect h2 {
+    font-family: 'Walter Turncoat', cursive;
+    /*font-family: 'Permanent Marker', sans-serif;*/
     text-transform: uppercase;
     text-align: center;
     margin-top: auto;
@@ -466,12 +487,22 @@ footer{
 @media screen and (max-width: 1256px){
     .grid-container{
         grid-template-columns: auto auto auto;
+        width: 80%;
     }
 
     .homeSection {
-        width: 80%;
+
         margin: 7.5em auto 0 auto;
     }
+
+}
+
+@media screen and (max-width: 965px){
+
+    .nav{
+        margin-left: 5%;
+    }
+
 }
 
 
@@ -506,10 +537,11 @@ footer{
 
     .grid-container{
         grid-template-columns: auto auto;
+        width: 80%;
     }
 
     .homeSection {
-        width: 80%;
+
         margin: 7.5em auto 0 auto;
     }
 
@@ -518,10 +550,42 @@ footer{
 @media screen and (max-width: 410px){
     .grid-container{
         grid-template-columns: auto;
+        width: 80%;
     }
 
     .homeSection {
-        width: 80%;
+
         margin: 7.5em auto 0 auto;
     }
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    transition: .3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card p{
+    width: 50%;
+    margin-right: 1em;
+}
+.card:hover {
+    /*box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);*/
+    transform: scale(1);
+}
+.card:hover .entry-title {
+    background-position: -100% 0;
+    color: white;
+    border-radius: 3px;
+}
+
+.entry-title {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #F34213 50%);
+    background-size: 200%;
+    background-position: 0 0;
+    display: inline;
+    transition: .5s ease-in-out;
+    font-family: raleway, arial, sans-serif;
+    /*text-transform: uppercase;*/
 }

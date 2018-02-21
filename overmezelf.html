@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="css/eportfolio.css">
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/eportfolio.css">
     <!--FOOTER -->
     <link rel="stylesheet" type="text/css"
           href="https://cdn.rawgit.com/vaakash/socializer/a4c672bf/css/socializer.min.css">
@@ -16,104 +20,107 @@
     <title>Home</title>
 </head>
 <body>
-<div class="container green borderXwidth" id="myContainer">
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <a href="index.html" >home</a>
-    <a href="overmezelf.html" class="active">over mezelf</a>
-    <a href="">competenties</a>
-    <a href="cv.html">cv</a>
-    <a href="contact.html">contact</a>
-</div>
 
-<script>
-    function myFunction() {
-        var x = document.getElementById("myContainer");
-        if (x.className === "container green borderXwidth") {
-            x.className += " responsive green borderXwidth";
-        } else {
-            x.className = "container green borderXwidth";
-        }
-    }
-</script>
-
+<header class="h">
+    <h1 class="header"><a href="index2.html">Robbe Tistaert</a></h1>
+    <nav class="nav">
+        <ul>
+            <li class=""><a href="overmezelf.html">Over mij</a></li>
+            <li class=""><a href="">Competenties</a>
+            </li>
+            <li class=""><a href="cv2.html">Cv</a>
+            </li>
+            <li class=""><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!--<header class="h">-->
+    <!--<h1 class="header"><a href="index2.html">Robbe Tistaert</a></h1>-->
+    <!--<nav class="nav">-->
+        <!--<ul>-->
+            <!--<li class="hvr-underline-from-left"><a href="overmezelf.html">Over mij</a></li>-->
+            <!--<li class="hvr-underline-from-left"><a href="">Competenties</a>-->
+            <!--</li>-->
+            <!--<li class="hvr-underline-from-left"><a href="cv2.html">Cv</a>-->
+            <!--</li>-->
+            <!--<li class="hvr-underline-from-left"><a href="contact.html">Contact</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+<!--</header>-->
+<h2 class="paginaTitel">Over mij</h2>
 <section class="section overSection">
 
-    <div class="grid-container">
-        <div class="hovereffect grid-item">
-            <img class="img-responsive" src="img/basketball.png" alt="">
-            <div class="overlay">
-                <h4>Sportief</h4>
-            </div>
-
-        </div>
-        <article class="grid-item">
-            <img src="img/calendar%20(1).png" alt="">
-            <h4>24/08/1998</h4>
-        </article>
-        <article class="grid-item">
-            <img src="img/concert.png" alt="">
-            <h4>Muziekliefhebber</h4>
-        </article>
-        <article class="grid-item">
-            <img src="img/monitor.png" alt="">
-            <h4></h4>
-        </article>
-        <article class="grid-item">
-            <img src="img/guitar.png" alt="">
-            <h4>Ukulele</h4>
-        </article>
-        <article class="grid-item">
-            <img src="img/happy-children.png" alt="">
-            <h4>Chiroleider</h4>
-        </article>
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequuntur doloremque dolores
+            earum,
+            fugiat hic illum ipsa iste magni minima minus nemo nihil nostrum possimus repudiandae sequi similique velit,
+            vero. Animi <span class="entry-title">architecto</span> asperiores at atque aut beatae blanditiis
+            consequatur cumque itaque, labore magnam minima
+            non odit officia quae quasi quia recusandae sapiente sed sunt? Ab alias aperiam consequatur cum cupiditate,
+            dicta dolores eum explicabo labore magnam molestias omnis placeat possimus qui repudiandae ullam, vel veniam
+            voluptatibus? <span class="entry-title">Mollitia</span>Mollitia non officiis quam quisquam voluptate
+            voluptates! Cum deleniti dicta dolorum, ea esse</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequuntur doloremque dolores
+            earum,
+            fugiat hic illum ipsa iste magni minima minus nemo nihil nostrum possimus repudiandae sequi similique velit,
+            vero. Animi  asperiores at atque aut beatae blanditiis
+            consequatur cumque itaque, labore magnam minima
+            non odit officia quae <span class="entry-title">architecto</span> quasi quia recusandae sapiente sed sunt? Ab alias aperiam consequatur cum cupiditate,
+            dicta dolores eum explicabo labore magnam molestias omnis placeat possimus qui repudiandae ullam, vel veniam
+            voluptatibus? Mollitia non officiis quam quisquam voluptate
+            voluptates <span class="entry-title">Mollitia</span>! Cum deleniti dicta dolorum, ea esse</p>
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequuntur doloremque dolores-->
+            <!--earum,-->
+            <!--fugiat hic illum ipsa iste magni minima minus nemo nihil nostrum possimus repudiandae sequi similique velit,-->
+            <!--vero. Animi <span class="entry-title">architecto</span> asperiores at atque aut beatae blanditiis-->
+            <!--consequatur cumque itaque, labore magnam minima-->
+            <!--non odit officia quae quasi quia recusandae sapiente sed sunt? Ab alias aperiam consequatur cum cupiditate,-->
+            <!--dicta dolores eum explicabo labore magnam molestias omnis placeat possimus qui repudiandae ullam, vel veniam-->
+            <!--voluptatibus? <span class="entry-title">Mollitia</span>Mollitia non officiis quam quisquam voluptate-->
+            <!--voluptates! Cum deleniti dicta dolorum, ea esse</p>-->
     </div>
 
-    <div>
-        <article>
-            <h4>qmsdjfklqjsdf</h4>
-            <p>mskdjf</p>
-            <p>qpsdjfmlkqjsdf</p>
-        </article>
-    </div>
 
 </section>
 
+
+
 <script src="https://cdn.rawgit.com/vaakash/socializer/a4c672bf/js/socializer.min.js"></script>
 <script>
-    (function () {
-        socializer('.socializer');
-    }());
+(function () {
+socializer('.socializer');
+}());
 </script>
 
 
 <footer>
 
-    <div class="socializer a sr-48px sr-circle sr-font-lg sr-icon-dark sr-bdr-white sr-bg-none sr-pad">
-        <span class="sr-facebook">
-            <a class="hvr-underline-from-left"
-               href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F&amp;t=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web"
-               target="_blank" title="Facebook">
-                <i class="fa fa-facebook"></i>
-            </a>
-        </span>
-        <span class="sr-email"><a class="hvr-underline-from-left"
-                                  href="mailto:?to=&amp;subject=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web&amp;body=%20-%20https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F"
-                                  target="_blank" title="Email">
-            <i class="fa fa-envelope"></i>
-        </a>
-        </span>
-        <span class="sr-linkedin">
-            <a class="hvr-underline-from-left"
-               href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F&amp;title=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web&amp;summary="
-               target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i>
-            </a>
-        </span>
-        <span class="sr-github"><a class="hvr-underline-from-left" href="https://www.github.com/" target="_blank"
-                                   title="Github">
-            <i class="fa fa-github"></i>
-        </a>
-        </span>
-    </div>
+<div class="socializer a sr-48px sr-circle sr-font-lg sr-icon-dark sr-bdr-white sr-bg-none sr-pad">
+<span class="sr-facebook">
+<a class="hvr-underline-from-left"
+href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F&amp;t=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web"
+target="_blank" title="Facebook">
+<i class="fa fa-facebook"></i>
+</a>
+</span>
+<span class="sr-email"><a class="hvr-underline-from-left"
+href="mailto:?to=&amp;subject=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web&amp;body=%20-%20https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F"
+target="_blank" title="Email">
+<i class="fa fa-envelope"></i>
+</a>
+</span>
+<span class="sr-linkedin">
+<a class="hvr-underline-from-left"
+href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F&amp;title=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web&amp;summary="
+target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i>
+</a>
+</span>
+<span class="sr-github"><a class="hvr-underline-from-left" href="https://www.github.com/" target="_blank"
+title="Github">
+<i class="fa fa-github"></i>
+</a>
+</span>
+</div>
 </footer>
 
 
