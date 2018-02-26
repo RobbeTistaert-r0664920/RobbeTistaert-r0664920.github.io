@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/eportfolio.css">
+    <!--FOOTER -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.rawgit.com/vaakash/socializer/a4c672bf/css/socializer.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+    <title>Competenties</title>
+</head>
+<body>
+
+<header class="h">
+    <h1 class="header"><a href="index.html"><img src="img/E-portfolio.png" alt=""></a></h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="overmezelf.html">Wie ben ik?</a></li>
+            <li class="active"><a href="competenties.html">Competenties</a>
+            </li>
+            <li><a href="cv2.html">Curriculum vitae</a>
+            </li>
+            <li ><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<h2 class="paginaTitel"></h2>
+<section class="section competentiesSection">
+
+    <div class="buttons">
+        <button class="tablink" onclick="openPage('Home', this, '#2A324C')" id="defaultOpen">Gegevens behandelen</button>
+        <button class="tablink" onclick="openPage('News', this, '#2A324C')">Analyseren</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#2A324C')">Oplossingen uitwerken</button>
+        <button class="tablink" onclick="openPage('About', this, '#2A324C')">Beheren</button>
+        <button class="tablink" onclick="openPage('1', this, '#2A324C')">Projectmatig werken</button>
+        <button class="tablink" onclick="openPage('2', this, '#2A324C')">Communiceren</button>
+        <button class="tablink" onclick="openPage('3', this, '#2A324C')">Eigen gedrag aanpassen</button>
+        <button class="tablink" onclick="openPage('4', this, '#2A324C')">Kwaliteitsvol handelen</button>
+    </div>
+
+
+    <div id="Home" class="tabcontent">
+        <h3>Gegevens behandelen</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+
+    <div id="News" class="tabcontent">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+
+    <div id="1" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+
+    <div id="2" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+
+    <div id="3" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+
+    <div id="4" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+
+
+</section>
+
+
+<script>
+    function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+</script>
+
+<footer>
+
+    <div class="socializer a sr-48px sr-circle sr-font-lg sr-icon-dark sr-bdr-white sr-bg-none sr-pad">
+<span class="sr-facebook">
+<a class="hvr-underline-from-left"
+   href="https://www.facebook.com/robbe.tistaert"
+   target="_blank" title="Facebook">
+<i class="fa fa-facebook"></i>
+</a>
+</span>
+        <span class="sr-email"><a class="hvr-underline-from-left"
+                                  href="mailto:robbe.tistaert@hotmail.be"
+                                  target="_blank" title="Email">
+<i class="fa fa-envelope"></i>
+</a>
+</span>
+        <span class="sr-linkedin">
+<a class="hvr-underline-from-left"
+   href="https://www.linkedin.com/in/robbe-tistaert-642455159/"
+   target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i>
+</a>
+</span>
+        <span class="sr-github"><a class="hvr-underline-from-left" href="https://github.com/RobbeTistaert-r0664920"
+                                   target="_blank"
+                                   title="Github">
+<i class="fa fa-github"></i>
+</a>
+</span>
+    </div>
+</footer>
+
+
+</body>
+</html>
