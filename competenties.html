@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/eportfolio.css">
+
     <!--FOOTER -->
     <link rel="stylesheet" type="text/css"
           href="https://cdn.rawgit.com/vaakash/socializer/a4c672bf/css/socializer.min.css">
@@ -27,7 +27,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="css/eportfolio.css">
 
     <title>Competenties</title>
 </head>
@@ -42,7 +42,7 @@
             </li>
             <li><a href="cv2.html">Curriculum vitae</a>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact/ Portfolio</a></li>
         </ul>
     </nav>
 </header>
@@ -51,54 +51,220 @@
 <section class="section competentiesSection">
     <h2 class="paginaTitel">Competentiematrix</h2>
     <div class="buttons">
-        <button class="tablink" onclick="openPage('Home', this, '#2A324C')" id="defaultOpen">Gegevens behandelen
+        <button class="tablink" onclick="openPage('Home', this, '#2A324C', 'white')" id="defaultOpen">Gegevens behandelen
         </button>
-        <button class="tablink" onclick="openPage('News', this, '#2A324C')">Analyseren</button>
-        <button class="tablink" onclick="openPage('Contact', this, '#2A324C')">Oplossingen uitwerken</button>
-        <button class="tablink" onclick="openPage('About', this, '#2A324C')">Beheren</button>
-        <button class="tablink" onclick="openPage('1', this, '#2A324C')">Projectmatig werken</button>
-        <button class="tablink" onclick="openPage('2', this, '#2A324C')">Communiceren</button>
-        <button class="tablink" onclick="openPage('3', this, '#2A324C')">Eigen gedrag aanpassen</button>
-        <button class="tablink" onclick="openPage('4', this, '#2A324C')">Kwaliteitsvol handelen</button>
+        <button class="tablink" onclick="openPage('News', this, '#2A324C', 'white')">Analyseren</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#2A324C', 'white')">Oplossingen uitwerken</button>
+        <button class="tablink" onclick="openPage('About', this, '#2A324C', 'white')">Beheren</button>
+        <button class="tablink" onclick="openPage('1', this, '#2A324C', 'white')">Projectmatig werken</button>
+        <button class="tablink" onclick="openPage('2', this, '#2A324C', 'white')">Communiceren</button>
+        <button class="tablink" onclick="openPage('3', this, '#2A324C', 'white')">Eigen gedrag aanpassen</button>
+        <button class="tablink" onclick="openPage('4', this, '#2A324C', 'white')">Kwaliteitsvol handelen</button>
     </div>
-
 
     <div id="Home" class="tabcontent">
         <h3>Gegevens behandelen</h3>
-        <p>Home is where the heart is..</p>
+        <table class="competence-table">
+            <tr>
+                <th></th>
+                <th>Elementair niveau</th>
+                <th>Doorgroeiniveau</th>
+                <th>Integratieniveau</th>
+                <th>Expertniveau</th>
+            </tr>
+            <tr>
+                <td rowspan="3"><span>1.1</span> Gegevens verzamelen</td>
+                <td>Gegevens verzamelen</td>
+                <td><b>Structuur aanbrengen in de gegevens</b></td>
+                <td>Verzamelde testgegevens structureren, in hoofd- en bijzaken onderscheiden en in een relevant referentiekader positioneren</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Verzamelde gegevens opsommen binnen een aangereikt referentiekader</td>
+                <td><b>Verzamelde gegevens opsommen binnen en buiten een aangereikt referentiekader</b></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td>Zinvolle testgegevens verzamelen</td>
+                <td><b>In de verzamelde testgegevens hoofd- en bijzaken onderscheiden</b></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><span>1.2.</span> Gegevens modelleren</td>
+                <td>Gegevens modelleren volgens een aangereikt model</td>
+                <td>Gemodelleerde gegevens interpreteren</td>
+                <td><b>Gegevens modelleren volgens een relevant model</b></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td></td>
+                <td>Verschillende modellen vergelijken</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan=2><span>1.3.</span> Verbanden leggen</td>
+                <td>Causaal denken</td>
+                <td>Vooropgestelde relaties kritisch interpreteren</td>
+                <td><b>Vereiste relaties zelfstandig aanbrengen</b></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td>Notie hebben van vereiste relaties</td>
+                <td>Vereiste relaties onder begeleiding aanbrengen</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="4"><span>1.4.</span> Gegevens opslaan (uitzuiveren, converteren, stockeren)</td>
+                <td>Notie hebben van bestaande procedures om gegevens en veiligheidskopies op te slaan</td>
+                <td>Gegevens opslaan en veiligheidskopies maken volgens een aangereikte procedure</td>
+                <td><b>Zelfstandig een relevante kopieerprocedure bepalen</b></td>
+                <td>Automatiseren van de kopieerprocedure</td>
+            </tr>
+            <tr>
+                <td>Notie hebben van procedures om gegevens uit te zuiveren</td>
+                <td>Gegevens uitzuiveren / valideren volgens een aangereikte procedure</td>
+                <td><b>Toepassen van een efficiënte opslagprocedure</b></td>
+                <td>Automatiseren van de opslagprocedure</td>
+            </tr>
+            <tr>
+                <td>Notie hebben van converteerprogramma's</td>
+                <td>Gegevens converteren en opslaan binnen eenzelfde opslagmedium</td>
+                <td><b>Een validatiemethode bepalen en uitwerken voor een geïntegreerde toepassing</b></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td>Gegevens opslaan in een aangereikt opslagmedium</td>
+                <td></td>
+                <td><b>Gegevens converteren om over te brengen naar andere opslagmedia</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><span>1.5.</span> Gegevens ter beschikking stellen</td>
+                <td>Notie hebben van bestaande presentatievormen</td>
+                <td><b>Bestaande presentatievormen kennen</b></td>
+                <td>Selecteren van een gepaste presentatievorm</td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td>Onder begeleiding gegevens invoeren in een aangereikte presentatievorm</td>
+                <td><b>Zelfstandig invoeren van gegevens in een aangereikte presentatievorm</b></td>
+                <td>Zelfstandig invoeren van gegevens in een gepaste presentatievorm</td>
+                <td></td>
+            </tr>
+        </table>
+
     </div>
 
     <div id="News" class="tabcontent">
-        <table class="table table-striped">
-            <thead>
+        <h3>Analyseren</h3>
+        <table class="competence-table">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <th></th>
+                <th>Elementair niveau</th>
+                <th>Doorgroeiniveau</th>
+                <th>Integratieniveau</th>
+                <th>Expertniveau</th>
             </tr>
             <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td rowspan="5"><span>2.1.</span> Informatiebehoeften van een organisatie identificeren</td>
+                <td>Kennis hebben van de missie van een organisatie</td>
+                <td>Onder begeleiding informatie omtrent de missie van een organisatie documenteren</td>
+                <td><b>Zelfstandig informatie omtrent de missie van en organisatie documenteren</b></td>
+                <td></td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td>Informatie omtrent de missie van een organisatie verzamelen</td>
+                <td>Herformuleren van een probleem of opdracht zodat de kern duidelijk wordt</td>
+                <td><b>Zelfstandig de kern van een probleem of opdracht duidelijk schetsen</b></td>
+                <td></td>
+                <td></td>
             </tr>
-            </tbody>
+            <tr>
+                <td>Verzamelde informatie samenvatten</td>
+                <td>Onder begeleiding de kern van een probleem of opdracht duidelijk schetsen</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Begrijpen van een probleem of opdracht</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td>Oorzaak-gevolg onderscheiden bij probleemdetectie</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><span>2.2.</span> De informatiebehoeften van een organisatie vertalen in concepten, schema's en relaties</td>
+                <td>Notie hebben van bestaande methodieken om gegevens te structureren</td>
+                <td><b>Onder begeleiding gebruik maken van een methodiek om gegevens te structureren</b></td>
+                <td>Zelfstandig gebruik maken van een methodiek om gegevens te structureren</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><b>Onder begeleiding de meest relevante methodiek toepassen om gegevens te structureren</b></td>
+                <td>Zelfstandig de meest relevante methodiek toepasen om gegevens te structureren</td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td></td>
+                <td><b>Onder begeleiding verschillende modellen op elkaar afstemmen</b></td>
+                <td>Zelfstandig vershillende modellen op elkaar afstemmen</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><span>2.3.</span> Mogelijke IT-oplossingen documenteren / formuleren
+                </td>
+                <td>Mogelijke oplossingen van gelijkaardige, bestaande problemen verzamelen</td>
+                <td>Bruikbare oplossingen opsommen</td>
+                <td><b>Zelfstandig pro's en contra's van de bruikbare oplossingen opsommen</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Onder begeleiding pro's en contra's van de bruikbare oplossingen opsommen</td>
+                <td><b>Zelfstandig noodzaak van nieuwe oplossingen omschrijven</b></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td></td>
+                <td>Onder begeleiding noodzaak van nieuwe oplossingen omschrijven</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td><span>2.4.</span> Mogelijke IT-oplossingen evalueren</td>
+                <td>Notie hebben van de beschikbare criteria</td>
+                <td><b>Onder begeleiding bruikbare oplossingen aftoetsen met behulp van beschikbare criteria</b></td>
+                <td>Zelfstandig bruikbare oplossingen aftoetsen met behulp van beschikbare criteria</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><span>2.5.</span> Testprocedures opstellen voor nieuwe IT-oplossingen</td>
+                <td>Betrokken partijen identificeren</td>
+                <td><b>Onder begeleiding voor elk van de partijen mogelijke, concrete werkwijzen vastleggen</b></td>
+                <td>Zelfstandig voor elk van de partijen mogelijke, concrete werkwijzen vastleggen</td>
+                <td></td>
+            </tr>
+            <tr class="bottom-row">
+                <td>Domein voor elk van de partijen afbakenen</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
+
     </div>
 
     <div id="Contact" class="tabcontent">
@@ -136,7 +302,7 @@
 
 
 <script>
-    function openPage(pageName, elmnt, color) {
+    function openPage(pageName, elmnt, backcolor, color) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -145,9 +311,11 @@
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].style.backgroundColor = "";
+            tablinks[i].style.color = "#1e2019";
         }
         document.getElementById(pageName).style.display = "block";
-        elmnt.style.backgroundColor = color;
+        elmnt.style.backgroundColor = backcolor;
+        elmnt.style.color = color;
 
     }
 
