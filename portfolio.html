@@ -14,80 +14,70 @@
     <!--FOOTER -->
     <link rel="stylesheet" type="text/css"
           href="https://cdn.rawgit.com/vaakash/socializer/a4c672bf/css/socializer.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <title>Home</title>
+
+
+    <title>Contact/Portfolio</title>
 </head>
-<body>
 
 <header class="h">
     <h1 class="header"><a href="index.html"><img src="img/E-portfolio.png" alt=""></a></h1>
-    <h1 class="naam">Robbe Tistaert</h1>
+    <nav class="nav">
+        <input type="checkbox" id="mobile-menu-checkbox" class="mobile-menu-checkbox">
+        <ul>
+            <li><a href="overmezelf.html">Wie ben ik?</a></li>
+            <li class="active"><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="competenties.html">Competenties</a>
+            </li>
+            <li><a href="cv2.html">Curriculum vitae</a>
+            </li>
+            <li ><a href="contact.html">Contact</a></li>
+        </ul>
+        <label class="mobile-menu-toggle" for="mobile-menu-checkbox">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
 </header>
-
-<section class="section homeSection">
-
-
-    <div id="myContainer" class="grid-container">
-        <span class="grid-item">
-            <a class="hovereffect homeImg hvr-underline-from-left"
-               href="overmezelf.html">
-                <i class=""><img src="img/robbe-3.jpg" alt=""></i>
-                <div class="overlay">
-                    <h2>Wie ben ik?</h2>
-                </div>
-            </a>
-        </span>
-        <span class="grid-item">
-            <a class="hovereffect homeImg hvr-underline-from-left"
-               href="portfolio.html">
-                <i class=""><img src="img/robbe-46.jpg" alt=""></i>
-                <div class="overlay">
-                    <h2>Portfolio</h2>
-                </div>
-            </a>
-        </span>
-        <span class="grid-item">
-            <a class="hovereffect homeImg hvr-underline-from-left"
-               href="competenties.html">
-                <i class=""><img src="img/robbe-31.jpg" alt=""></i>
-                <div class="overlay">
-                    <h2>Competenties</h2>
-                </div>
-            </a>
-        </span>
-        <span class="grid-item">
-            <a class="hovereffect homeImg hvr-underline-from-left"
-               href="cv2.html">
-                <i class=""><img src="img/robbe-30.jpg" alt=""></i>
-                            <div class="overlay">
-                <h2>Curriculum vitae</h2>
-            </div>
-            </a>
-        </span>
-        <span class="grid-item">
-            <a class="hovereffect homeImg hvr-underline-from-left"
-               href="contact.html">
-                <i class=""><img src="img/robbe-39.jpg" alt=""></i>
-                            <div class="overlay">
-                <h2>Contact</h2>
-            </div>
-            </a>
-        </span>
-    </div>
-
-</section>
-
 <script src="https://cdn.rawgit.com/vaakash/socializer/a4c672bf/js/socializer.min.js"></script>
-<script>
-    (function () {
-        socializer('.socializer');
-    }());
-</script>
+<!--<script>-->
+<!--(function () {-->
+<!--socializer('.socializer');-->
+<!--}());-->
+<!--</script>-->
 
+
+<section class="contact2">
+    <!--<div style="margin-left: 5% ;border-left:4px solid #2A324C;height:border-box;"></div>-->
+
+    <article class="contactSection portfolio">
+        <h2 class="paginaTitel">Portfolio</h2>
+        <article>
+            <h3>1</h3>
+            <p><a target="_blank" href="https://r0664920.webontwerp.ucll.be/website/">Webontwikkeling 1</a></p>
+        </article>
+        <article>
+            <h3>2</h3>
+            <p><a target="_blank" href=" http://java.cyclone2.khleuven.be:38034/r0664920_Ledenlijst_Crud/index.html">Webontwikkeling
+                2</a></p>
+        </article>
+
+        <article>
+            <h3>3</h3>
+            <p><a target="_blank" href="http://ipajax.cyclone2.khleuven.be:38033/OpenClass_Team1_Demo/">Openlesdagen
+                projectweek</a></p>
+        </article>
+        <article>
+            <h3>4</h3>
+            <p><a target="_blank" href="https://chiromelkwezer.weebly.com/">Site Chiro Melkwezer</a></p>
+        </article>
+
+    </article>
+</section>
 
 <footer>
 
-    <div class="socializer a sr-48px sr-circle sr-font-lg sr-icon-white sr-bdr-white sr-bg-none sr-pad">
+    <div class="socializer a sr-48px sr-circle sr-font-lg sr-icon-dark sr-bdr-white sr-bg-none sr-pad">
         <span class="sr-facebook">
             <a class="hvr-underline-from-left"
                href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.aakashweb.com%2Fapps%2Fsocial-buttons-generator%2F&amp;t=Free%20social%20buttons%20sharebar%20generator%20-%20Aakash%20Web"
@@ -114,7 +104,6 @@
         </span>
     </div>
 </footer>
-
 
 </body>
 </html>
