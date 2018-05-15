@@ -223,6 +223,8 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
 .section {
     margin-top: 0;
     margin-bottom: 4em !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .homeSection {
@@ -275,31 +277,52 @@ hr {
     height: 100%;
 }
 
-/*.grid-item a i {*/
-    /*width: 50%;*/
-/*}*/
+
+/*OVER MEZELF*/
 
 .overSection {
-    /*margin-top: 0.5em;*/
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     width: 70%;
-    /*border-top: 1.5px solid #C4C4C2;*/
-    /*border-bottom: 2px solid #C4C4C2;*/
 }
 
-.overSection p {
-    text-align: justify-all;
+.wie-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: red;*/
 }
+
+.wie-item {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 200px;
+    height: 100%;
+    /*border: 5px solid #FFD18F;*/
+    outline: 5px solid transparent;
+}
+
+.wie-item:hover{
+    cursor: pointer;
+    outline: 5px solid;
+    outline-offset: 5px;
+    -moz-outline-radius: 50% 1em 12%;
+    /*background-color: #2A324C;*/
+    color: #2A324C;
+    transition: 200ms ease-in-out;
+}
+
 
 
 
 
 .cvSection {
     margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -323,16 +346,15 @@ hr {
 .contact2{
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
     text-align: center;
 }
 
-.contactSection{
+.contact2 article{
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .portfolio article p a{
     text-decoration: underline;
@@ -631,8 +653,8 @@ footer {
     }
 
     .homeSection article {
-        margin-left: auto;
-        margin-right: auto;
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
         /*background-color: red;*/
         width: 80%;
     }
