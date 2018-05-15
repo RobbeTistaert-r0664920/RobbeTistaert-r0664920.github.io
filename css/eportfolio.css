@@ -139,6 +139,7 @@ h2.paginaTitel {
     /*font-family: 'Walter Turncoat', cursive;*/
     /*margin-left: 21%;*/
     /*margin-top: 1.5em;*/
+    text-align: center;
 }
 
 p {
@@ -289,7 +290,7 @@ hr {
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 50px;
     grid-row-gap: 30px;
-    width: 90%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     /*background-color: red;*/
@@ -302,8 +303,8 @@ hr {
     justify-content: center;
     /*align-items: center;*/
     width: 200px;
-    height: 100%;
-    /*border: 5px solid #FFD18F;*/
+    height: 60px;
+    /*border-bottom: 5px solid #2A324C;*/
     outline: 5px solid transparent;
 }
 
