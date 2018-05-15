@@ -312,7 +312,7 @@ hr {
     cursor: pointer;
     outline: 5px solid;
     outline-offset: 5px;
-    -moz-outline-radius: 50% 1em 12%;
+    /*-moz-outline-radius: 50% 1em 12%;*/
     /*background-color: #2A324C;*/
     color: #2A324C;
     transition: 200ms ease-in-out;
